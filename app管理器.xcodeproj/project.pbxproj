@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD538AC11E16922E00C30CA2 /* AppView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD538AC01E16922E00C30CA2 /* AppView.m */; };
+		CD538AC41E1696EE00C30CA2 /* appModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD538AC31E1696EE00C30CA2 /* appModel.m */; };
 		CD6F0C411E12A5C5000E30B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F0C401E12A5C5000E30B2 /* main.m */; };
 		CD6F0C441E12A5C5000E30B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F0C431E12A5C5000E30B2 /* AppDelegate.m */; };
 		CD6F0C471E12A5C5000E30B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F0C461E12A5C5000E30B2 /* ViewController.m */; };
 		CD6F0C4A1E12A5C5000E30B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F0C481E12A5C5000E30B2 /* Main.storyboard */; };
 		CD6F0C4C1E12A5C5000E30B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6F0C4B1E12A5C5000E30B2 /* Assets.xcassets */; };
 		CD6F0C4F1E12A5C5000E30B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6F0C4D1E12A5C5000E30B2 /* LaunchScreen.storyboard */; };
+		CD6F0C571E12A608000E30B2 /* appView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD6F0C561E12A608000E30B2 /* appView.xib */; };
+		CD6F0C591E12A835000E30B2 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD6F0C581E12A835000E30B2 /* apps.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD538ABF1E16922E00C30CA2 /* AppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppView.h; sourceTree = "<group>"; };
+		CD538AC01E16922E00C30CA2 /* AppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppView.m; sourceTree = "<group>"; };
+		CD538AC21E1696EE00C30CA2 /* appModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = appModel.h; sourceTree = "<group>"; };
+		CD538AC31E1696EE00C30CA2 /* appModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = appModel.m; sourceTree = "<group>"; };
 		CD6F0C3C1E12A5C5000E30B2 /* app管理器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app管理器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6F0C401E12A5C5000E30B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CD6F0C421E12A5C5000E30B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		CD6F0C4B1E12A5C5000E30B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD6F0C4E1E12A5C5000E30B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD6F0C501E12A5C5000E30B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6F0C561E12A608000E30B2 /* appView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = appView.xib; sourceTree = "<group>"; };
+		CD6F0C581E12A835000E30B2 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD538AC51E1696F300C30CA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD538AC21E1696EE00C30CA2 /* appModel.h */,
+				CD538AC31E1696EE00C30CA2 /* appModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CD538AC61E16970100C30CA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F0C561E12A608000E30B2 /* appView.xib */,
+				CD538ABF1E16922E00C30CA2 /* AppView.h */,
+				CD538AC01E16922E00C30CA2 /* AppView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CD538AC71E16971800C30CA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F0C451E12A5C5000E30B2 /* ViewController.h */,
+				CD6F0C461E12A5C5000E30B2 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		CD6F0C331E12A5C5000E30B2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +96,9 @@
 		CD6F0C3E1E12A5C5000E30B2 /* app管理器 */ = {
 			isa = PBXGroup;
 			children = (
-				CD6F0C421E12A5C5000E30B2 /* AppDelegate.h */,
-				CD6F0C431E12A5C5000E30B2 /* AppDelegate.m */,
-				CD6F0C451E12A5C5000E30B2 /* ViewController.h */,
-				CD6F0C461E12A5C5000E30B2 /* ViewController.m */,
-				CD6F0C481E12A5C5000E30B2 /* Main.storyboard */,
-				CD6F0C4B1E12A5C5000E30B2 /* Assets.xcassets */,
-				CD6F0C4D1E12A5C5000E30B2 /* LaunchScreen.storyboard */,
-				CD6F0C501E12A5C5000E30B2 /* Info.plist */,
+				CD538AC71E16971800C30CA2 /* Controller */,
+				CD538AC61E16970100C30CA2 /* View */,
+				CD538AC51E1696F300C30CA2 /* Model */,
 				CD6F0C3F1E12A5C5000E30B2 /* Supporting Files */,
 			);
 			path = "app管理器";
@@ -74,6 +107,13 @@
 		CD6F0C3F1E12A5C5000E30B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD6F0C421E12A5C5000E30B2 /* AppDelegate.h */,
+				CD6F0C431E12A5C5000E30B2 /* AppDelegate.m */,
+				CD6F0C481E12A5C5000E30B2 /* Main.storyboard */,
+				CD6F0C4B1E12A5C5000E30B2 /* Assets.xcassets */,
+				CD6F0C4D1E12A5C5000E30B2 /* LaunchScreen.storyboard */,
+				CD6F0C501E12A5C5000E30B2 /* Info.plist */,
+				CD6F0C581E12A835000E30B2 /* apps.plist */,
 				CD6F0C401E12A5C5000E30B2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,8 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6F0C571E12A608000E30B2 /* appView.xib in Resources */,
 				CD6F0C4F1E12A5C5000E30B2 /* LaunchScreen.storyboard in Resources */,
 				CD6F0C4C1E12A5C5000E30B2 /* Assets.xcassets in Resources */,
+				CD6F0C591E12A835000E30B2 /* apps.plist in Resources */,
 				CD6F0C4A1E12A5C5000E30B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,8 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD538AC11E16922E00C30CA2 /* AppView.m in Sources */,
 				CD6F0C471E12A5C5000E30B2 /* ViewController.m in Sources */,
 				CD6F0C441E12A5C5000E30B2 /* AppDelegate.m in Sources */,
+				CD538AC41E1696EE00C30CA2 /* appModel.m in Sources */,
 				CD6F0C411E12A5C5000E30B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +354,7 @@
 				CD6F0C551E12A5C5000E30B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
